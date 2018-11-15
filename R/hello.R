@@ -1,19 +1,14 @@
-# Hello, world!
-#
-# This is an example function named 'hello'
-# which prints 'Hello, world!'.
-#
-# You can learn more about package authoring with RStudio at:
-#
-#   http://r-pkgs.had.co.nz/
-#
-# Some useful keyboard shortcuts for package authoring:
-#
-#   Build and Reload Package:  'Ctrl + Shift + B'
-#   Check Package:             'Ctrl + Shift + E'
-#   Test Package:              'Ctrl + Shift + T'
+#' This function says hello to people (Header)
+#' subheader
+#' text
+#' @param name A string of parameters preferentiallz name of a person. (Default = "Julia")
+#' @return prints Hello name to screen
+#' @examples hello("Julia")
+#' @export
+#'
 
-hello <- function() {
-  print("Hello, world!")
+hello <- function(name="Julia") {
+  print(paste("Hello", name))
 }
 
+hello("Julia")
